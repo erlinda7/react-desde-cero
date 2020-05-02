@@ -10,7 +10,7 @@ const Curso = ({ title, image, price, profesor }) => (
       <h3 className="t5 s-mb-2 s-center">{title ? title : "No hay titulo"}</h3>
       <div className="s-mb-2 s-main-center">{profesor}</div>
       <div className="s-main-center">
-        <a className="button--ghost-alert button--tiny" href="#">
+        <a className="button--ghost-alert button--tiny" href="https://ed.team">
           {`$ ${price} USD`}
         </a>
       </div>
