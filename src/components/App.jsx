@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/styles.scss";
 import Course from './Pages/Course';
 import Form from './Pages/Form'
-import CourseGrid from './Organisms/CourseGrid';
+import Courses from './Pages/Courses';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 import MainMenu from './Organisms/MainMenu';
 import Historial from './Pages/Historial';
@@ -17,7 +17,7 @@ const App = () => (
     <Switch>
       <Route path="/" exact component={Home} />
       <Route path="/cursos/:id" exact component={Course} />
-      <Route path="/cursos" exact component={CourseGrid} />
+      <Route path="/cursos" exact component={Courses} />
       <Route path="/historial/:valor" exact component={Historial} />
       <Route path="/historial" exact component={Historial} />
       <Route path="/formulario" exact component={() => <Form name="Pagina de contacto" />} />
