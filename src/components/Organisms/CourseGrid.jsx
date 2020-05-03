@@ -17,4 +17,4 @@ const CourseGrid = ({ courses }) => (
     ))}
   </div>
 );
-export default withLoader("courses", CourseGrid);
+export default withLoader("courses")(CourseGrid);
