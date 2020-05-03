@@ -11,16 +11,6 @@ class Users extends React.Component {
       users: [],
     };
   }
-//   componentDidMount() {
-//     fetch("https://jsonplaceholder.typicode.com/users", { method: "GET" })
-//     .then(response =>response.json())
-//     .then(response2=>{
-//         this.setState({
-//             users:response2
-//         })
-//     });
-    
-//   }
 
 componentDidMount(){
     axios.get('https://jsonplaceholder.typicode.com/users')
